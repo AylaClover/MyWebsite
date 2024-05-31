@@ -3,60 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Resume and Projects</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        h1, h2, h3 {
+            margin-top: 0;
+        }
+        h2 {
+            color: #333;
+        }
+        .project {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+        .project h3 {
+            color: #333;
+        }
+    </style>
 </head>
 <body>
-    <div class="wrapper">
-        <input type="checkbox" name="nav-check" id="nav-check" />
-        
-        <section class="sec-about" id="sec-about">
-            <div class="content">
-                <h1>who am i?</h1>
-                <p>my name is [Your Name].</p>
-                <p>i am a [Your Role].</p>
-                <p>i focus on [Your Skills].</p>
-            </div>
-        </section>
-        
-        <section class="sec-portfolio" id="sec-portfolio">
-            <div class="row">
-                <div class="col-big"><img src="your-project-image-1.jpg" alt="Project 1 snapshot" /></div>
-                <div class="col-big"><img src="your-project-image-2.jpg" alt="Project 2 snapshot" /></div>
-            </div>
-            <div class="row">
-                <div class="col-big"><img src="your-project-image-3.jpg" alt="Project 3 snapshot" /></div>
-                <div class="col-big"><img src="your-project-image-4.jpg" alt="Project 4 snapshot" /></div>
-            </div>
-        </section>
-        
-        <section class="sec-contact" id="sec-contact">
-            <ul class="soc-media">
-                <li><a href="[Your Twitter URL]" class="fa fa-twitter" target="_blank"></a></li>
-                <li><a href="[Your Facebook URL]" class="fa fa-facebook" target="_blank"></a></li>
-                <!-- Add more social media links as needed -->
-                <li><a href="mailto:[Your Email]" class="fa fa-envelope"></a></li>
-            </ul>
-        </section>
-        
-        <section class="sec-home" id="sec-home">
-            <div class="content">
-                <h1>hi and welcome on my portfolio.</h1>
-                <h2><a href="#sec-about">who</a> am i?</h2>
-                <h2><a href="#sec-portfolio">what</a> i do?</h2>
-                <h2><a href="#sec-contact">where</a> to find me?</h2>
-            </div>
-        </section>
-        
-        <nav role="navigation">
-            <label for="nav-check"></label>
-            <ul class="navigation">
-                <li><a href="#sec-home">home</a></li>
-                <li><a href="#sec-about">about</a></li>
-                <li><a href="#sec-portfolio">portfolio</a></li>
-                <li><a href="#sec-contact">contact</a></li>
-            </ul>
-        </nav>
-    </div>
+    <header>
+        <h1>Kayla Miller</h1>
+        <p>IT User Support Technian</p>
+    </header>
+    <section class="container">
+        <h2>About Me</h2>
+        <p>Proven ability to create and deliver solutions to help grow the business and optimize planning/integration. Seeking a Security Analyst position where I can demonstrate my excellent communication, team planning, leadership, and customer service skills along with a hungry drive for organizational success.</p>
+
+        <h2>Experience</h2>
+        <h3>RCIT - Riverside County of Information Technology</h3>
+        <p>Troubleshoot, repair, and provide resolution to desktops, mobile devices and applications
+            Train users in equipment and software usage
+            Utilize ServiceNow Ticket for documentation
+            Monitor network performance and security
+            Effectively communicate with customers explaining technical concepts in a clear and concise manner
+            Troubleshoot network protocols such as TCP/IP, DHCP, DNS, and FTP
+            Utilize network monitoring tools such as Wireshark, SolarWinds, and PRTG.
+            Configuring, and maintaining network systems.</p>
+
+        <h2>Education</h2>
+        <h3>Information Security and Cyber Defense</h3>
+        <p>Riverside City College</p>
+
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project 1: Creating a Network</h3>
+            <p>Collaborate with team members to design and implement a Raspberry Pi network to simulate real-world scenarios for students, facilitating learning of tools used in defensive and offensive hacking techniques.</p>
+        </div>
+        <div class="project">
+            <h3>Project 2: Developing a Website</h3>
+            <p>Your on it! What a project to create your own website, but it was fun.</p>
+        </div>
+    </section>
 </body>
 </html>
