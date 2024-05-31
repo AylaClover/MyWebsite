@@ -1,16 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            background-color: #333; /* Dark background color */
+            color: #fff; /* Light text color */
+        }
 
-<html>
-    <h1>
-        Howdy! Welcome to my Page!
-    </h1>
-    <body>
-        <h2>About Me</h2>
-        <p>
-            I've been a tech about 5 years and just received a degree in Cyber Defense.
-        </p>
-        <h2>What I'm working on.</h2>
-        <p>
-            I'm currently work on building a home lab and more will be coming soon!
-        </p>
-    </body>
+        /* Styles for header, nav, sections, and footer */
+        header, nav, section, footer {
+            background-color: #222; /* Darker background color for sections */
+            padding: 20px;
+            margin: 10px;
+        }
+
+        /* Styles for links */
+        a {
+            color: #fff; /* Light text color for links */
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Styles for form elements */
+        input[type="file"], input[type="url"], input[type="submit"] {
+            background-color: #444; /* Darker background color for form inputs */
+            color: #fff; /* Light text color for form inputs */
+            border: none;
+            padding: 8px;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#notes">Notes</a></li>
+        </ul>
+    </nav>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li>Category 1</li>
+            <li>Category 2</li>
+        </ul>
+    </section>
+
+    <section id="resume">
+        <h2>Resume</h2>
+        <form action="/upload_resume" method="post" enctype="multipart/form-data">
+            <input type="file" name="resume" accept=".pdf">
+            <input type="submit" value="Upload Resume">
+        </form>
+    </section>
+
+    <section id="notes">
+        <h2>Notes</h2>
+        <form action="/save_notes" method="post">
+            <label for="noteLink">Note Link:</label>
+            <input type="url" id="noteLink" name="noteLink" placeholder="Enter web link">
+            <input type="submit" value="Save Note">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Your Name</p>
+    </footer>
+</body>
 </html>
