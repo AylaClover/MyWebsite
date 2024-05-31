@@ -1,0 +1,15 @@
+<?php
+if ($_FILES['resume']['error'] === UPLOAD_ERR_OK) {
+    $tempFile = $_FILES['resume']['tmp_name'];
+    $targetFile = 'uploads/' . $_FILES['resume']['name'];
+
+    if (move_uploaded_file($tempFile, $targetFile)) {
+        echo "<script>document.getElementById('resumeFrame').src = '$targetFile';</script>";
+        echo "<p>Resume uploaded successfully!</p>";
+    } else {
+        echo "<p>Sorry, there was an error uploading your file.</p>";
+    }
+} else {
+    echo "<p>Sorry, there was an error uploading your file.</p>";
+}
+?>
