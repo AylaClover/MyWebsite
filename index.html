@@ -39,44 +39,54 @@
             color: #f0ad4e; /* change header color */
         }
     </style>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
     <header>
         <h1>Kayla Miller</h1>
-        <p>IT User Support Technian</p>
+        <p>IT User Support Technician</p>
     </header>
-    <section class="container">
-        <h2>About Me</h2>
-        <p>Proven ability to create and deliver solutions to help grow the business and optimize planning/integration. Seeking a Security Analyst position where I can demonstrate my excellent communication, team planning, leadership, and customer service skills along with a hungry drive for organizational success.</p>
-
-        <h2>Experience</h2>
-        <h3>RCIT - Riverside County of Information Technology</h3>
-        <p>Troubleshoot, repair, and provide resolution to desktops, mobile devices and applications
-            Train users in equipment and software usage
-            Utilize ServiceNow Ticket for documentation
-            Monitor network performance and security
-            Effectively communicate with customers explaining technical concepts in a clear and concise manner
-            Troubleshoot network protocols such as TCP/IP, DHCP, DNS, and FTP
-            Utilize network monitoring tools such as Wireshark, SolarWinds, and PRTG.
-            Configuring, and maintaining network systems.</p>
-
-        <h2>Education</h2>
-        <h3>Information Security and Cyber Defense</h3>
-        <p>Riverside City College</p>
-
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Project 1: Creating a Network</h3>
-            <p>Collaborate with team members to design and implement a Raspberry Pi network to simulate real-world scenarios for students, facilitating learning of tools used in defensive and offensive hacking techniques.</p>
+    <div class="flex min-h-screen bg-zinc-900 text-white">
+        <div class="w-1/4 bg-zinc-800 p-4">
+            <ul class="space-y-2">
+                <li><a href="#site-navigation" class="block py-2 px-4 hover:bg-zinc-700 transition duration-300 transform hover:-translate-y-1 hover:scale-105">Site Navigation</a></li>
+                <li><a href="#projects" class="block py-2 px-4 hover:bg-zinc-700 transition duration-300 transform hover:-translate-y-1 hover:scale-105">Projects</a></li>
+                <li><a href="#who-are-you" class="block py-2 px-4 hover:bg-zinc-700 transition duration-300 transform hover:-translate-y-1 hover:scale-105">Who are you?</a></li>
+            </ul>
         </div>
-        <div class="project">
-            <h3>Project 2: Developing a Website</h3>
-            <p>Your on it! What a project to create your own website, but it was fun.</p>
+        <div class="w-3/4 p-8">
+            <div id="projects" class="bg-zinc-700 p-6 rounded-lg">
+                <h2>Projects</h2>
+                <div class="project">
+                    <h3>Project 1: Creating a Network</h3>
+                    <p>Collaborate with team members to design and implement a Raspberry Pi network to simulate real-world scenarios for students, facilitating learning of tools used in defensive and offensive hacking techniques.</p>
+                </div>
+                <div class="project">
+                    <h3>Project 2: Developing a Website</h3>
+                    <p>Your on it! What a project to create your own website, but it was fun.</p>
+                </div>
+            </div>
+            <div id="who-are-you" class="bg-zinc-700 p-6 rounded-lg">
+                <h2>About Me</h2>
+                <h3>Experience</h3>
+                <p>RCIT - Riverside County of Information Technology<br>
+                Troubleshoot, repair, and provide resolution to desktops, mobile devices and applications
+                Train users in equipment and software usage
+                Utilize ServiceNow Ticket for documentation
+                Monitor network performance and security
+                Effectively communicate with customers explaining technical concepts in a clear and concise manner
+                Troubleshoot network protocols such as TCP/IP, DHCP, DNS, and FTP
+                Utilize network monitoring tools such as Wireshark, SolarWinds, and PRTG.
+                Configuring, and maintaining network systems.</p>
+
+                <h3>Education</h3>
+                <p>Information Security and Cyber Defense<br>
+                Riverside City College</p>
+
+                <h3>About Me</h3>
+                <p>Proven ability to create and deliver solutions to help grow the business and optimize planning/integration. Seeking a Security Analyst position where I can demonstrate my excellent communication, team planning, leadership, and customer service skills along with a hungry drive for organizational success.</p>
+            </div>
         </div>
-    </section>
-	<h2>Join Me</h2>
-
-<a href="https://youtu.be/m6VbCdiKs3E?si=EHQQh5YwyWKtodOw">This is a link</a>
-
+    </div>
 </body>
 </html>
